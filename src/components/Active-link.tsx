@@ -11,13 +11,13 @@ interface Props {
   className?:string
 }
 
-export const ActiveLink=({href,children,className,ActiveColor="text-primary"}:Props)=>{
+export const ActiveLink=({href,children,className,ActiveColor}:Props)=>{
     const pathname = usePathname()
     const isActive:boolean = useMemo(()=>{
         return pathname === href
     },[pathname,href])
     return (
-        <Link href={href} className={clsx(isActive && `${ActiveColor} font-medium`,className)} >
+        <Link href={href} className={clsx(isActive && `${ActiveColor} text-tertiary font-medium text-xl`,className)} >
             {children} 
         </Link>
     )

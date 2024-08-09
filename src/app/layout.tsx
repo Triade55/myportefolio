@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(inter.className,"h-[100vh]")}>{children}
+      <body className={clsx(inter.className,"h-[100vh]","bg-gray-300")}>{children}
         <FloatLink/>
       </body>
     </html>

@@ -31,3 +31,6 @@ body {
     text-wrap: balance;
   }
 }
+.fs-h{
+  font-size: clamp(10px,1em,80px);
+}

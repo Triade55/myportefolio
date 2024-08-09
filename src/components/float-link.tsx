@@ -16,10 +16,10 @@ export default function FloatLink() {
   ];
 
   return (
-    <div className="flex flex-col space-y-3 absolute bg-black border border-primary rounded-full p-3 end-5 top-[40%]">
+    <div className="flex flex-col space-y-3  bg-primary border border-white rounded-full p-3 end-5 top-[40%] fixed z-10">
       {H.map((h,index) => (
         <div key={index}>
-          <ActiveLink href={`/${h.name === "Home" ? "" : h.name}`}><h.icon /></ActiveLink>
+          <ActiveLink href={`/${h.name === "Home" ? "" : h.name}`} ActiveColor="text-4xl"><h.icon /></ActiveLink>
         </div>
       ))}
     </div>
